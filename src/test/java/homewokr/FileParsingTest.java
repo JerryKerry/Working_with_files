@@ -23,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FileParsingTest {
 
-    private final ClassLoader cl = ParsingTest.class.getClassLoader();
+    private final ClassLoader cl = FileParsingTest.class.getClassLoader();
 
     @DisplayName("Проверка содержимого PDF-файла из ZIP архива")
     @Test
@@ -108,4 +108,5 @@ public class FileParsingTest {
             Assertions.assertEquals("916 123-4567", phoneNumbers.get(1).asText());
         }
     }
+
 }
