@@ -68,7 +68,6 @@ public class FileParsingTest {
                 if (entry.getName().endsWith(".csv")) {
                     try (CSVReader csvReader = new CSVReader(new InputStreamReader(zis))) {
                         List<String[]> data = csvReader.readAll();
-                        System.out.println(Arrays.toString(data.get(0)));
 
                         if (!data.isEmpty() && data.get(0).length > 0) {
                             data.get(0)[0] = data.get(0)[0].replace("\uFEFF", "");
@@ -110,3 +109,4 @@ public class FileParsingTest {
     }
 
 }
+
