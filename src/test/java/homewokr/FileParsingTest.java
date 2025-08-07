@@ -4,14 +4,10 @@ import com.codeborne.pdftest.PDF;
 import com.codeborne.xlstest.XLS;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import com.opencsv.CSVReader;
-
-import lessons.ParsingTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
@@ -109,4 +105,5 @@ public class FileParsingTest {
     }
 
 }
+
 
